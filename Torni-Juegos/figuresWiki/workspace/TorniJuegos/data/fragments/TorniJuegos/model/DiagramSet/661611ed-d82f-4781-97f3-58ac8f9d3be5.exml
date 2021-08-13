@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TorniJuegos" version="4">
+  <OBJECT>
+    <ID name="TorniJuegos" mc="Standard.DiagramSet" uid="661611ed-d82f-4781-97f3-58ac8f9d3be5"/>
+    <PID name="TorniJuegos" mc="Standard.Project" uid="32c89210-7bcb-4540-a304-1b8a824803c9"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[TorniJuegos]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

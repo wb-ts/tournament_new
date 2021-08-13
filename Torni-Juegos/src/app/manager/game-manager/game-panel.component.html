@@ -1,0 +1,19 @@
+
+<div *ngIf="game">
+	<div class="panel panel-primary">
+      <div class="panel-heading">Info Game:</div>
+      <div class="panel-body"> Name: {{ game.getName }}</div>
+      <div class="panel-body"> Description: {{ game.getDescription }} </div>
+    </div>
+
+
+	<button class="btn btn-lg btn-block btn-primary" (click)="viewTournaments()">
+			View Tournaments
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" *ngIf="userLogged.getRol === 1"
+		(click)="deleteGame()">
+			Delete Game
+	</button>
+
+</div>

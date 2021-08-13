@@ -1,0 +1,45 @@
+
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand">Torni-Juegos</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav" *ngIf="loginTerminated">
+        <li><a routerLink="/usermanager"> User Control </a></li>
+        <li><a routerLink="/gamemanager"> Game Control </a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" *ngIf="loginTerminated">
+        <li><a> Hello {{name}}!</a></li>
+    </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="col-sm-3" *ngIf="!loginTerminated" style="margin-left: 200px;">
+  <div class="panel panel-primary">
+    <div class="panel-heading">Home Panel</div>
+    <div class="panel-body"> <p>Welcome to the Torni-Juegos web. <br/><br/>Here you will find the best tournaments for your favorite games. It will not disappoint you!<br/><br/>
+    If you want to see the project documentation, then <a href="https://github.com/nahumrosillo/Torni-Juegos">go to GitHub</a></p> </div>
+  </div>
+</div>
+
+<div class="col-sm-7" *ngIf="!loginTerminated">
+  <app-login-manager (userLogged)="onUserLogged($event)"  *ngIf="!loginTerminated">
+  </app-login-manager>
+
+
+<app-register-user-manager *ngIf="!loginTerminated">
+</app-register-user-manager>
+</div>
+
+
+
+<router-outlet></router-outlet>

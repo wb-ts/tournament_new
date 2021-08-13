@@ -1,0 +1,23 @@
+
+
+<div class="col-sm-4" (ngSubmit)="onSubmit()">
+<div class="panel panel-primary">
+  <div class="panel-heading">Login Panel</div>
+
+	<div class="input-group">
+  		<span class="input-group-addon" id="nick">Nick</span>
+  		<input type="text" class="form-control" aria-describedby="basic-addon1" required
+  			[(ngModel)]="loginUser.setNick">
+	</div>
+
+ 	<div class="input-group">
+  		<span class="input-group-addon" id="password">Password</span>
+  		<input type="password" class="form-control"  aria-describedby="basic-addon1" required 
+			[(ngModel)]="loginUser.setPassword">
+	</div>
+  </div>
+
+	<button type="submit" class="btn btn-lg btn-block btn-primary" (click)="onSubmit()">
+        Login
+	</button>
+</div>

@@ -1,0 +1,25 @@
+<div class="col-sm-3" style="margin-left: 200px;">
+<div class="panel panel-primary">
+    <div class="panel-heading">Player Tasks:</div>
+    <div class="panel-body"> You are a admin, so you can do the following tasks:</div>
+	
+	</div>
+</div>
+
+<div class="col-sm-3">
+	<div class="panel panel-primary">
+    <div class="panel-heading">Matchs List of {{tournamentSelected.getName}}:</div>
+	<ul class="list-group users-list">
+        <li class="list-group-item" *ngFor="let match of matchs let i = index;"
+            (click)="selectMatch(match)"  
+            [class.active]="match === activeMatch"> > Round {{i}}
+        </li>
+	</ul>
+	</div>
+</div>
+
+<div class="col-sm-3">
+	<app-match-panel (eventDelete)="deleteMatch()" 
+		(eventMatch)="viewMatchs()" [match]="activeMatch" [userLogged]="userLogged">
+	</app-match-panel>
+</div>

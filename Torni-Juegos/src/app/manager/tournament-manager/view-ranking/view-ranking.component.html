@@ -1,0 +1,44 @@
+<div class="col-sm-3" style="margin-left: 200px;">
+<div class="panel panel-primary">
+    <div class="panel-heading">Players:</div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr *ngFor="let team of totalTeam let i = index;">
+                    <td *ngFor="let user of team.getUsers let j = index;">
+                        {{user.getNick}} <br/>Team: {{i}} <br/> Nº: {{j}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+</div>
+
+<div class="col-sm-4">
+	<div class="panel panel-primary">
+    <div class="panel-heading">Ranking List of Tournament:</div>
+    <div class="table-responsive">
+    	<table class="table">
+    		<thead>
+    			<tr>
+    				<th>Team Name</th>
+    				<th>Score</th>
+    				<th>Number Winner</th>
+    				<th>Number Loser</th>
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr *ngFor="let team of teams">
+            		<td>Team {{ team.getTeam.getId }}</td>
+            		<td>{{ team.getNumScore }}</td>
+            		<td>{{ team.getNumWinner }}</td>
+            		<td>{{ team.getNumLoser }}</td>
+    			</tr>
+    		</tbody>
+    	</table>
+	</div>
+    </div>
+</div>

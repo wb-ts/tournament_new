@@ -1,0 +1,34 @@
+
+<div class="col-sm-3" style="margin-left: 200px;">
+<div class="panel panel-primary">
+    <div class="panel-heading">Sponsor Tasks:</div>
+    <div class="panel-body"> You are a sponsor, so you can do the following tasks:</div>
+	<button class="btn btn-lg btn-block btn-primary"
+	*ngIf="userLogged.getRol === 1 || userLogged.getRol === 3 "
+	routerLink="/tournamentmanager/newtournament">
+		Create Tournament
+	</button>
+</div>
+
+
+</div>
+
+<div class="col-sm-3">
+	<div class="panel panel-primary">
+    <div class="panel-heading">Tournaments List of {{gameSelected.getName}}:</div>
+	<ul class="list-group users-list">
+        <li class="list-group-item" *ngFor="let tournament of tournaments"
+            (click)="selectTournament(tournament)"  
+            [class.active]="tournament === activeTournament"> >{{ tournament.getName }}
+        </li>
+	</ul>
+	</div>
+</div>
+
+<div class="col-sm-3">
+
+		<app-tournament-panel (eventDelete)="deleteTournament()" 
+		(eventTournament)="viewMatchs()" (eventRanking)="viewRanking()" 
+		[tournament]="activeTournament" [userLogged]="userLogged"></app-tournament-panel>
+
+</div>

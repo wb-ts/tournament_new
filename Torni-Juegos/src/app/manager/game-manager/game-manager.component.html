@@ -1,0 +1,30 @@
+
+
+<div class="col-sm-3" style="margin-left: 200px;">
+<div class="panel panel-primary">
+    <div class="panel-heading">Admin Tasks:</div>
+    <div class="panel-body"> You are a admin, so you can do the following tasks:</div>
+	<button class="btn btn-lg btn-block btn-primary" 
+	*ngIf="userLogged.getRol === 1 || userLogged.getRol === 2 "
+	routerLink="/usermanager/newgame">
+		Create Game
+	</button>
+	</div>
+</div>
+
+<div class="col-sm-3">
+	<div class="panel panel-primary">
+    <div class="panel-heading">Games List:</div>
+	<ul class="list-group users-list">
+        <li class="list-group-item" *ngFor="let game of games"
+            (click)="selectGame(game)"  [class.active]="game === activeGame">>
+            {{ game.getName }}
+        </li>
+	</ul>
+	</div>
+</div>
+
+<div class="col-sm-3">
+		<app-game-panel (eventDelete)="deleteGame()" (eventTournament)="viewTournaments()" [game]="activeGame" [userLogged]="userLogged"></app-game-panel>
+
+</div>

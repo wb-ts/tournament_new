@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DCU Patrocinador" version="4">
+  <OBJECT>
+    <ID name="DCU Patrocinador" mc="Standard.UseCaseDiagram" uid="e818f416-43c8-4a50-bb16-430525ca7ba8"/>
+    <PID name="tornijuegos" mc="Standard.Package" uid="20d7e2f8-035f-46e9-b378-ede04a2eafab"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">369</ATT>
+      <ATT name="UiData"><![CDATA[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]]></ATT>
+      <ATT name="PdeProperties"></ATT>
+      <ATT name="Name"><![CDATA[DCU Patrocinador]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <ID name="Usuario" mc="Standard.Actor" uid="7e07179c-6b76-4392-8f60-2b72b06ecb2b"/>
+        <ID name="Patrocinador" mc="Standard.Actor" uid="185139e7-b1a4-4421-ab5a-a80f66a8812e"/>
+        <REFOBJ>
+          <ID name="Generalization" mc="Standard.Generalization" uid="d7ff4fc8-5997-4961-8bfa-023e6c98b154"/>
+        </REFOBJ>
+        <ID name="Crear Torneo" mc="Standard.UseCase" uid="9cf8bc9e-9df5-4ecc-9cb0-495253c68069"/>
+        <ID name="Crear Partida" mc="Standard.UseCase" uid="37cce983-f790-488e-869b-ffa85100c65e"/>
+        <ID name="Actualizar Partida" mc="Standard.UseCase" uid="0cedee98-beb3-4bc1-aa2b-c47895a11ca6"/>
+        <ID name="Finalizar Torneo" mc="Standard.UseCase" uid="e3456f23-2eeb-43e6-85c1-773eb713ce1e"/>
+        <ID name="Finalizar Partida" mc="Standard.UseCase" uid="469840de-4020-4aeb-948a-6b8b139e6f9b"/>
+        <ID name="Iniciar Partida" mc="Standard.UseCase" uid="970fb8e1-51a3-4a7d-81ea-1f039805ec5a"/>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="f1717463-eaa0-43e4-a2da-e93a1d4f22bd"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="4d8f8e1b-605a-4850-8bb8-dacc1e15c4cb"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="2bedee4c-91f4-42af-95bd-85d54d0aa627"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="559e42c2-7e2f-420d-9bc6-b028606185cc"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="fdfbf73b-b9af-40c9-bd00-0d60134482be"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="b5b0aa8b-25b7-4cb0-8cff-bcbed8e4d4f1"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="31e7dbb3-b318-464f-8c2d-bb7e2bda8154"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="08eec88d-46e4-4266-bcc5-ecea1d1301b1"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="6dc1e2d5-35be-4955-bbe9-c211b2017c22"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="46158c21-6048-4837-88a6-4851ee5f6543"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="c968407b-d033-42b6-9594-af8a9f904af4"/>
+        </REFOBJ>
+        <ID name="Validar Usuario" mc="Standard.UseCase" uid="2743d113-0509-4112-9e42-298129c1fd78"/>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="45a66501-88df-47ca-994c-705d4fc853cf"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="09843908-edd1-445d-820b-9709806b3bb0"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="8fbfcc80-328e-47af-8831-bf765fda9ced"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="8f377992-a952-44e7-ba1d-d2303c227b97"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="e7033f0e-aaad-44e2-b3f3-4d8e51d07b5a"/>
+        </REFOBJ>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Standard.Note" uid="a3bc9385-4ffb-40c4-a028-091f5795b1ea"/>
+          <ATTRIBUTES>
+            <ATT name="Content"></ATT>
+            <ATT name="MimeType"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Standard.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

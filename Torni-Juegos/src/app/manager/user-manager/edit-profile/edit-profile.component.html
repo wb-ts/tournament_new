@@ -1,0 +1,17 @@
+<div class="col-sm-4" style="margin-left: 200px;">
+<form #f="ngForm" (ngSubmit)="onSubmit()" validate>
+	<div class="form-group">
+  		<input type="text" class="form-control" placeholder="{{userLogged.getName}}" minlength="1" required
+  			[(ngModel)]="userLogged.setName" [ngModelOptions]="{standalone: true}">
+
+  		<input type="password" class="form-control" placeholder="{{userLogged.getPassword}}" required minlength="1"
+			[(ngModel)]="userLogged.setPassword" [ngModelOptions]="{standalone: true}">
+		<input type="text" class="form-control" placeholder="{{userLogged.getDni}}" minlength="9" maxlength="9"  required
+  			[(ngModel)]="userLogged.setDni" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<button type="submit" class="btn btn-lg btn-block btn-primary" 
+	(ngSubmit)="onSubmit()"> Edit Profile
+	</button>
+</form>
+</div>

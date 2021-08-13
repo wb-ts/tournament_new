@@ -1,0 +1,53 @@
+
+
+<div class="col-sm-4">
+<form #f="ngForm" (ngSubmit)="onSubmit()" validate>
+<div class="panel panel-primary">
+  <div class="panel-heading">Sign Up Panel</div>
+	<div class="form-group">
+  		<input type="text" class="form-control" placeholder="Nick" required minlength="5" 
+  			[(ngModel)]="newUser.setNick" [ngModelOptions]="{standalone: true}">
+	</div>
+
+ 	<div class="form-group">
+  		<input type="password" class="form-control" placeholder="Password" required minlength="5"
+			[(ngModel)]="newUser.setPassword" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<div class="form-group">
+  		<input type="text" class="form-control" placeholder="Name" required minlength="1"
+  			[(ngModel)]="newUser.setName" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<div class="form-group">
+  		<input type="text" class="form-control" placeholder="DNI" required minlength="9" maxlength="9" 
+  			[(ngModel)]="newUser.setDni" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<div class="form-group" required>
+		<label class="radio-inline"><input type="radio" name="optradio1" value="0" required
+		[(ngModel)]="newUser.setGenre" [ngModelOptions]="{standalone: true}">Male</label>
+
+		<label class="radio-inline"><input type="radio" name="optradio1" value="1" required
+		[(ngModel)]="newUser.setGenre" [ngModelOptions]="{standalone: true}">Female</label>
+	</div>
+
+	<div class="form-group">
+	<label>Birthday:</label>
+  		<input type="date" class="form-control" placeholder="Birthday" required
+  			[(ngModel)]="newUser.setBirthDate" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<div class="form-group" *ngIf="rolUserLogged === 1 || rolUserLogged === 2" required>
+		<label class="radio-inline"><input type="radio" name="rol" value="2" required
+		[(ngModel)]="newUser.setRol" [ngModelOptions]="{standalone: true}">ADMIN</label>
+
+		<label class="radio-inline"><input type="radio" name="rol" value="3" required
+		[(ngModel)]="newUser.setRol" [ngModelOptions]="{standalone: true}">SPONSOR</label>
+	</div>
+</div>
+
+	<button type="submit" class="btn btn-lg btn-block btn-primary" > Sign Up
+	</button>
+</form>
+</div>

@@ -1,0 +1,32 @@
+
+<div style="margin-left: 200px;">
+<div class="col-sm-3" *ngIf="userLogged.getRol === 1" >
+	<p align="center"> SuperAdmin </p>
+	<button class="btn btn-lg btn-block btn-primary" routerLink="/usermanager/newadmin">
+		New Admin
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" routerLink="/usermanager/deleteadmin">
+		Delete Admin
+	</button>
+</div>
+
+<div class="col-sm-3" *ngIf="userLogged.getRol === 1 || userLogged.getRol === 2 ">
+	<p align="center"> SuperAdmin | Admin</p>
+	<button class="btn btn-lg btn-block btn-primary" routerLink="/usermanager/newsponsor">
+		New Sponsor
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" routerLink="/usermanager/deletesponsor">
+		Delete Sponsor
+	</button>
+</div>
+
+<div class="col-sm-3">
+	<p align="center"> Player </p>
+	<button class="btn btn-lg btn-block btn-primary" routerLink="/usermanager/editprofile">
+		Edit Profile
+	</button>
+</div>
+
+</div>

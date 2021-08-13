@@ -1,0 +1,11 @@
+<div class="col-sm-4" style="margin-left: 200px;">
+<form #f="ngForm" (ngSubmit)="onSubmit()" validate>
+	<div class="form-group">
+  		<input type="text" class="form-control" placeholder="Name" required 
+  			[(ngModel)]="name" [ngModelOptions]="{standalone: true}">
+	</div>
+
+	<button type="submit" class="btn btn-lg btn-block btn-primary" > Delete Game
+	</button>
+</form>
+</div>

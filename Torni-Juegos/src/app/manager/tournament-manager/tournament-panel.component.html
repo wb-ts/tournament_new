@@ -1,0 +1,31 @@
+
+<div *ngIf="tournament">
+	<div class="panel panel-primary">
+      <div class="panel-heading">Tournament Info:</div>
+      <div class="panel-body"> Name: {{ tournament.getName }}</div>
+      <div class="panel-body"> Current Players: {{ tournament.getCurrentUsers}}</div>
+      <div class="panel-body"> Total Players: {{ tournament.getNumMaxUsers}}</div>
+      <div class="panel-body"> Total Teams: {{ tournament.getNumTeams}}</div>
+      <div class="panel-body"> Number of Matchs: {{ tournament.getNumMatch}}</div>
+      <div class="panel-body"> Finished: {{ tournament.getFinishedTournament}}</div>
+    </div>
+
+	<button class="btn btn-lg btn-block btn-primary" (click)="addPlayer()"
+	*ngIf="!tournament.isFullTournament">
+		Add Player
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" (click)="viewMatchs()">
+		View Matchs
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" (click)="viewRanking()">
+		View Ranking
+	</button>
+
+	<button class="btn btn-lg btn-block btn-primary" *ngIf="userLogged.getRol === 1"
+		(click)="deleteTournament()">
+		Delete Tournament
+	</button>
+</div>
+
